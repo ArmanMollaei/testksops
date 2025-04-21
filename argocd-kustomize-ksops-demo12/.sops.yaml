@@ -1,0 +1,6 @@
+---
+creation_rules:
+  - path_regex: secrets\/dev\/.*\.(ya?ml)$
+    encrypted_regex: "^(data|stringData)$"
+    pgp: >-
+      8DDC9FF793E5CFBBDD8CBB2028EEB70E7F1A0827
