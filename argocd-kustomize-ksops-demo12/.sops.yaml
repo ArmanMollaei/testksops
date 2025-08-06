@@ -1,6 +1,12 @@
+---
 creation_rules:
-  - path_regex: .*\/dev\/.*\.(yaml|yml|enc|enc\.ya?ml)$
-    pgp: E97B6D41B38D63E029F99D41B50070E8B23954EB
-
-  - path_regex: .*\/int\/.*\.(yaml|yml|enc|enc\.ya?ml)$
-    pgp: 09A4A2C60A72BDC0059D691AC114725718337673
+  - path_regex: secrets\/dev\/.*\.(ya?ml)$
+    encrypted_regex: "^(data|stringData)$"
+    pgp: >-
+      272CD863251659A309FE520049D3B4D4BB103232
+  - path_regex: secrets\/int\/.*\.(ya?ml)$
+  
+    encrypted_regex: "^(data|stringData)$"
+    pgp: >-
+      272CD863251659A309FE520049D3B4D4BB103232
+...
